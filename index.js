@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const PORT = process.env.port;
+const PORT = 4000;  //process.env.port;
 const HOST = "localhost";
 
 const landingPage = fs.readFileSync('./home.html');
