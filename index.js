@@ -8,7 +8,8 @@ const landingPage = fs.readFileSync('./home.html');
 
 const server = http.createServer((req, resp) => {
     if (req.url === "/") {
-        return resp.end(landingPage);
+        // return resp.end(landingPage);
+        return resp.end("<h1>  HOME PAGE </h1>");
     } else if (req.url === "/about") {
         return resp.end("<h1>  ABOUT PAGE </h1>");
     }else if (req.url === "/conct") {
